@@ -1,7 +1,4 @@
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import Hero from "./components/Hero";
-import Notices from "./components/Message";
 import { Routes, Route } from "react-router-dom";
 import GovernmentSchemes from "./pages/GovernmentSchemes";
 import Layout from "./components/Layout";
@@ -18,6 +15,7 @@ export default function App() {
             <Message/>
             </>
           }/>
+          <Route path="/schemes" element={<GovernmentSchemes/>}/>
         </Route>
       </Routes>
 
